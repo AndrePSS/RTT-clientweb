@@ -1,0 +1,206 @@
+/* bootstrap installed
+  ==========================================
+  Necessary to note we are using bootstrap v4 - beta.*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+.main-container {
+  margin: 20px;
+}
+
+input {
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+input:focus, input.focus {
+  border: 1px solid rgba(208, 0, 25, 0.3) !important;
+}
+
+.btn-danger {
+  background-color: #666 !important;
+  border: none !important;
+  border-radius: 10px 0 0 10px !important;
+}
+
+.btn-danger:hover, .btn-danger.hover {
+  border: none !important;
+}
+
+.btn-danger:focus, .btn-danger.focus {
+  box-shadow: 0 0 0 2px rgba(217,83,79,.0) !important;
+  -webkit-box-shadow: 0 0 0 2px rgba(217,83,79,.0) !important;
+}
+
+.btn+.dropdown-toggle-split {
+  background-color: #d00019 !important;
+  border-radius: 0 10px 10px 0 !important;
+}
+
+.dropdown-menu {
+  top: 93% !important;
+  border-radius: .25rem !important;
+}
+
+@keyframes hover-color {
+  from {
+    border-color: #c0c0c0; }
+  to {
+    border-color: #d00019; } }
+
+.magic-radio,
+.magic-checkbox {
+  position: absolute;
+  display: none; }
+
+.magic-radio[disabled],
+.magic-checkbox[disabled] {
+  cursor: not-allowed; }
+
+.magic-radio + label,
+.magic-checkbox + label {
+  position: relative;
+  display: inline-block;
+  padding-left: 30px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.magic-radio + label:hover:before,
+.magic-checkbox + label:hover:before {
+  animation-duration: 0.4s;
+  animation-fill-mode: both;
+  animation-name: hover-color;
+}
+
+.magic-radio + label:before, .magic-checkbox + label:before {
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    content: '';
+    border: 3px solid #c0c0c0;
+}
+
+.magic-radio + label:after,
+.magic-checkbox + label:after {
+    position: absolute;
+    display: none;
+    content: '';
+}
+
+.magic-radio[disabled] + label,
+.magic-checkbox[disabled] + label {
+  cursor: not-allowed;
+  color: #e4e4e4;
+}
+
+.magic-radio[disabled] + label:hover, .magic-radio[disabled] + label:before, .magic-radio[disabled] + label:after,
+.magic-checkbox[disabled] + label:hover,
+.magic-checkbox[disabled] + label:before,
+.magic-checkbox[disabled] + label:after {
+    cursor: not-allowed;
+}
+
+.magic-radio[disabled] + label:hover:before,
+.magic-checkbox[disabled] + label:hover:before {
+  border: 1px solid #e4e4e4;
+  animation-name: none;
+}
+
+.magic-radio[disabled] + label:before,
+.magic-checkbox[disabled] + label:before {
+  border-color: #e4e4e4;
+}
+
+.magic-radio:checked + label:before,
+.magic-checkbox:checked + label:before {
+  animation-name: none;
+}
+
+.magic-radio:checked + label:after,
+.magic-checkbox:checked + label:after {
+  display: block;
+}
+
+.magic-radio + label:before {
+  border-radius: 50%;
+}
+
+.magic-radio + label:after {
+  top: 14px;
+  left: 6px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #d00019;
+}
+
+.magic-radio:checked + label:before {
+  border: 3px solid #d00019;
+}
+
+.magic-radio:checked[disabled] + label:before {
+  border: 1px solid #faaab4;
+}
+
+.magic-radio:checked[disabled] + label:after {
+  background: #faaab4;
+}
+
+.magic-checkbox + label:before {
+  border-radius: 3px;
+}
+
+.magic-checkbox + label:after {
+  top: 2px;
+  left: 7px;
+  box-sizing: border-box;
+  width: 6px;
+  height: 12px;
+  transform: rotate(45deg);
+  border-width: 2px;
+  border-style: solid;
+  border-color: #fff;
+  border-top: 0;
+  border-left: 0;
+}
+
+.magic-checkbox:checked + label:before {
+  border: #d00019;
+  background: #d00019;
+}
+
+.magic-checkbox:checked[disabled] + label:before {
+  border: #d00019;
+  background: #d00019;
+}
+
+h2 {margin:1em 0;}
+
+/*
+.collapse-accordion a[data-toggle=collapse] {display: block;padding:.75rem 1.25rem;}
+*/
+.collapse-accordion .card a[data-toggle=collapse] {
+  display: block;
+  padding: .75rem 1.25rem;
+  text-decoration: none;
+  width: 100%;
+}
+
+.collapse-accordion .card-header {
+  padding:0;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.no-padding-right {
+  padding-right: 0 !important;
+}
