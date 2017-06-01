@@ -130,6 +130,7 @@ input:focus, input.focus {
   padding-left: 30px;
   cursor: pointer;
   vertical-align: middle;
+  margin-right: 20px;
 }
 
 .magic-radio + label:hover:before,
@@ -221,7 +222,7 @@ input:focus, input.focus {
 }
 
 .magic-checkbox + label:after {
-  top: 2px;
+  top: 10px;
   left: 7px;
   box-sizing: border-box;
   width: 6px;
@@ -232,6 +233,7 @@ input:focus, input.focus {
   border-color: #fff;
   border-top: 0;
   border-left: 0;
+  margin-right: 10px;
 }
 
 .magic-checkbox:checked + label:before {
@@ -278,4 +280,72 @@ h2 {margin:1em 0;}
   color: #fff !important;
   background-color: #d00019 !important;
   border: none !important;
+}
+
+.add-log {
+  color: #292b2c;
+  margin: 5px 0;
+}
+
+.add-log i {
+  color: #666;
+}
+
+.add-log:hover, .add-log:focus, .add-log:active,
+.add-log:hover i, .add-log:focus i, .add-log:active i {
+  color: #d00019;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.float-right {
+  float: right;
+  clear: both;
+}
+
+.button-group {
+  margin: 0 20px;
+  display: block;
+}
+
+.btn-primary {
+  border-radius: 10px !important;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #d00019 !important;
+  border: none !important;
+  cursor: pointer;
+  margin: 0 15px !important;
+}
+
+.btn-primary-ghost {
+  border-radius: 10px !important;
+  text-transform: uppercase;
+  color: #d00019;
+  background-color: rgba(208, 0, 25, 0) !important;
+  border: 2px solid #d00019 !important;
+  cursor: pointer;
+  margin: 0 15px !important;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.btn:hover, .btn.hover, {
+  background-color: rgba(208, 0, 25, 1) !important;
+  color: #fff !important;
+}
+
+.btn-primary:hover {
+  background-color: #e3001b !important;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.btn-primary-ghost.focus, .btn-primary-ghost:focus {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
 }
