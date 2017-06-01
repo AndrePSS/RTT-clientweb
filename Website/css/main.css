@@ -19,7 +19,7 @@ body {
   padding: 20px;
 }
 
-.labled-container lable {
+.labled-container .lable {
   background-color: #d00019;
   line-height: 0.1rem;
   font-family: 'Open Sans', sans-serif;
@@ -41,7 +41,7 @@ body {
   background-color:
 }
 
-.spacer lable {
+.spacer .lable {
   background-color: #d00019;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.4rem;
@@ -50,6 +50,29 @@ body {
   padding: 5px 20px;
   top: -35px;
   margin-left: -20px;
+}
+
+.dark-title {
+  background-color: #666;
+  width: 100% !important;
+  padding: 5px 20px;
+  margin: 40px 0 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.less-width-20px {
+  width: calc(100% - 19px) !important;
+}
+
+.spacer-10v {
+  margin: 5px 0;
+  display: block;
+}
+
+.clear {
+  clear: both;
 }
 
 input {
@@ -249,4 +272,10 @@ h2 {margin:1em 0;}
 
 .collapse-accordion .card a[data-toggle=collapse]:nth-last-child(2) {
   border-radius: 10px 10px 0 0 !important;
+}
+
+.input-group-addon {
+  color: #fff !important;
+  background-color: #d00019 !important;
+  border: none !important;
 }

@@ -8,12 +8,15 @@
     <link rel="stylesheet" href="css/main.css">
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   </head>
   <body>
 
     <div class="labled-container">
+
     <lable class="lable col-2">Lable container</lable>
 
 <!-- Dropdown -->
@@ -36,6 +39,27 @@
         </div>
       </div>
 
+<!-- Date Selector -->
+      <div class="form-group row">
+        <label for="example-text-input" class="col-2 col-form-label">Date picker</label>
+        <div class='col-10'>
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker1'>
+
+                    <input type='text' class="form-control" value="follow for plugin: http://eonasdan.github.io/bootstrap-datetimepicker/Options/" />
+                    <span class="input-group-addon">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker1').datetimepicker();
+            });
+        </script>
+      </div>
+
 <!-- Text Field - Lable on left -->
       <div class="form-group row">
         <label for="example-text-input" class="col-2 col-form-label">Text</label>
@@ -54,18 +78,27 @@
       <div class="form-group row">
         <div class="col-12">
           <input class="magic-radio" type="radio" name="radio" id="1" value="option1" checked="">
-          <label for="1" class="col-2 col-form-label">Radio Button 1</label>
+          <label for="1" class="col-form-label">Radio Button 1</label>
           <input class="magic-radio" type="radio" name="radio" id="2" value="option2" checked="">
-          <label for="2t" class="col-2 col-form-label">Radio Button 2</label>
+          <label for="2t" class="col-form-label">Radio Button 2</label>
         </div>
       </div>
+
+      <span class="spacer-10v"></span>
+
+      <div class="dark-title">Dark Title</div>
+
 
 <!-- Labled full width spacer -->
     <div class="spacer">
       <lable class="lable col-2">Lable container</lable>
 
+
+      <!-- Dark Title -->
+            <div class="dark-title less-width-20px">Dark Title</div>
+
 <!-- accordians -->
-      <div class="form-group row col-12 no-padding-right">
+      <div class="form-group row col-12 no-padding-right clear">
         <div class="collapse-accordion col-12" id="accordion2" role="tablist" aria-multiselectable="true">
           <div class="card">
             <div class="card-header" role="tab" id="headingOne1">
