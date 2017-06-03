@@ -562,6 +562,67 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 
+/* Footer */
+.footer-container {
+  font-size: 0.85rem;
+  align-content: center;
+  position: relative;
+  text-align: center;
+  border-top: 1px solid #666;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer-links span:nth-of-type(2) {
+  padding-left: 10px;
+  border-left: 2px solid #d00019;
+  color: #666;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.footer-links span a {
+  color: #666;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.footer-links span a:hover {
+  color: #d00019;
+  text-decoration: none;
+}
+
+.footer-social span a {
+  color: #666;
+  text-decoration: none;
+  margin: 20px 5px 20px;
+  display: inline-block;
+  opacity: 0.75;
+  transition: 0.15s;
+}
+
+.footer-social span a:hover {
+  opacity: 1;
+}
+
+.footer-bottom {
+  background-color: #666;
+  color: #fff;
+  text-decoration: none;
+  margin: 0px 0 20px;
+  padding: 7.5px;
+}
+
+.footer-bottom span a {
+  color: #d2d2d2;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.footer-bottom span a:hover {
+  color: #d00019;
+  text-decoration: none;
+}
 
 
 /* Dropdown Button */
