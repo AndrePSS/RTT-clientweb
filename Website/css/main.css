@@ -384,10 +384,10 @@ h2 {margin:1em 0;}
   top: 0;
   left: 0;
   background: #ffffff; /* Old browsers */
-  background: -moz-linear-gradient(top, #ffffff 0%, #d8d8d7 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #ffffff 0%,#d8d8d7 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #ffffff 0%,#d8d8d7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d8d8d7',GradientType=0 ); /* IE6-9 */
+background: -moz-linear-gradient(top, #ffffff 8%, #d8d8d7 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #ffffff 8%,#d8d8d7 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #ffffff 8%,#d8d8d7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d8d8d7',GradientType=0 ); /* IE6-9 */
 }
 
 .top-bar {
@@ -469,6 +469,99 @@ h2 {margin:1em 0;}
   border-bottom: 2px solid rgba(208, 0, 25, 1);
   color: #666 !important;
 }
+
+/* Sidebar Navigation */
+.sidenav-container {
+  zoom: 85%;
+  position: fixed;
+  width: 260px;
+  height: 100%;
+  display: block;
+  margin: 269px 20px 0 10px;
+  /* padding: 20px; */
+  background-color: white;
+  border-right: 2px solid #e9e9e9;
+  border-left: 2px solid #e9e9e9;
+}
+
+.fa-9x {
+  zoom: 900%;
+}
+
+.profile-container {
+  width: 200px;
+  margin: 20px auto;
+  display: block;
+  position: relative;
+  padding-top: 20px;
+  /* margin: 0 auto; */
+}
+
+.profile-picture {
+  width: auto;
+  align-content: center;
+  position: relative;
+  text-align: center;
+  color: #666;
+}
+
+.profile-username {
+  margin: 10px 0 20px;
+  font-size: 1.75rem;
+  color: #666;
+  font-family: 'Open Sans', sans-serif;
+  width: auto;
+  align-content: center;
+  position: relative;
+  text-align: center;
+}
+
+.sidenav-nav {
+  display: block;
+  width: 100% !important;
+  position: relative;
+}
+
+.sidenav-nav .sidenav-items {
+  display: block !important;
+  width: 100% !important;
+  position: relative !important;
+  padding-left: 0;
+  padding-top: 0px;
+}
+
+.sidenav-nav ul a {
+  padding: 0;
+  margin: 10px 0 !important;
+  border-top: 2px solid #e9e9e9;
+}
+
+.sidenav-nav ul a:last-of-type {
+  padding-bottom: 10px;
+  border-top: 2px solid #e9e9e9;
+  border-bottom: 2px solid #e9e9e9;
+}
+
+.sidenav-nav ul a {
+  color: #999;
+  font-size: 1.25rem;
+  font-weight: 600;
+  list-style-type: none;
+  display: block;
+  width: 100%;
+  align-content: flex-start;
+  position: relative;
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.sidenav-nav ul a:hover {
+  text-decoration: none;
+  color: #d00019;
+}
+
+
 
 
 /* Dropdown Button */
