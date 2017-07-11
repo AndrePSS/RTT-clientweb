@@ -1,0 +1,556 @@
+@charset "utf-8";
+/* CSS Document */
+html {
+    background: url(../img/bg_img.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: auto;
+    font-family: 'Open Sans';
+}
+
+body {
+	margin-left: 0;
+}
+
+/*CONTAINER*/
+.container {
+    margin: auto;
+    padding: 0;
+    width: 1291px;
+    position: relative;
+}
+
+.header {
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    right: 0;
+}
+
+
+
+/*Country option*/
+/*.country {
+
+    width: 170px;
+    right: 103px;
+    position: absolute;
+    margin-top: 10px;
+}
+.navigation { margin: 50px; }
+.navigation ul li { margin: 0px 10px; }
+
+.dropdown dd, .dropdown dt, .dropdown ul {
+    margin: 0px;
+    padding: 0px;
+}
+.dropdown dd ul li a span:first-child, .dropdown dt a span span:first-child {
+    background-image: url('http://i.imgur.com/OQiDoZe.png');
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 11px;
+    display: inline-block;
+    margin:5px;
+    vertical-align: top;
+}
+.dropdown dt a span {
+    cursor: pointer;
+    padding: 5px;
+    white-space: nowrap;
+}
+.dropdown dt a img {
+    position: relative;
+    z-index: 1;
+}
+.dropdown dt a span span:first-child:before {
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 10px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.2) inset;
+}
+.dropdown dt a span span {
+    display: inline-block;
+    padding: 0;
+}
+.dropdown dt a span span:first-child {
+    padding: 0;
+}
+.dropdown dd {
+    position: relative;
+}
+.dropdown a, .dropdown a:visited {
+    color: #4a535f;
+    text-decoration: none;
+    outline: none;
+}
+.dropdown a:hover {
+    color: #5d4617;
+}
+.dropdown dt a:hover, .dropdown dt a:focus {
+    color: #5d4617;
+}
+.dropdown dt a {
+    position: relative;
+    display: inline-block;
+    padding-right: 20px;
+    overflow: hidden;
+    width: 138px;
+}
+.dropdown dt a:after {
+    content: '';
+    position: absolute;
+    height: 32px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 35px;
+}
+
+.dropdown dt a:before {
+   content: "";
+    height: 3px;
+    position: absolute;
+    right: 7px;
+    top: 6px;
+    width: 20px;
+    z-index: 2;
+
+}
+.dropdown dd ul {
+    background: #f0f2f7;
+    color: #C5C0B0;
+    display: none;
+    left: 0px;
+    padding: 5px 0px;
+    position: absolute;
+    width: 144px;
+    list-style: none;
+    max-height: 170px;
+    overflow-y: scroll;
+    top:10px;
+    z-index: 2;
+}
+
+.dropdown li a {
+    font-size:13px;
+}
+
+li a span:nth-child(2) {
+    line-height: 2em;
+}
+.dropdown dd ul::-webkit-scrollbar-track {
+ -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.3);
+ border-left:1px solid rgba(0,0,0,0.1);
+}
+.dropdown dd ul::-webkit-scrollbar-thumb {
+ background: rgba(0,0,0,0.4);
+webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.5), 1px 0 0 #5cace9 inset, 2px 0 0 #b3d5ee inset;
+    border-radius:10px;
+}
+.dropdown dd ul::-webkit-scrollbar-thumb:window-inactive {
+ background: blue;
+}
+.dropdown span.value {
+    display: none;
+}
+.dropdown dd ul li a {
+    padding: 5px;
+    display: block;
+    font-size: 12px !important;
+}
+.dropdown dd ul li a:hover {
+    background-color: rgba(0,0,0,0.05);
+}
+dl.dropdown {
+    display: inline-block;
+    width: 160px;
+    margin: -3px 0 0 1px;
+}
+dl.dropdown span:nth-child(3) {
+    color: rgba(0,0,0,0.4)
+}
+dl.dropdown > span:nth-child(2) {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+}
+dl.dropdown span:nth-child(3) {
+    float: right;
+}
+dl.dropdown dt span:nth-child(2) {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.6em;
+    padding-left: 10px;
+    font-family: arial, helvetica;
+}
+dl.dropdown dt span:nth-child(3) {
+    display: none;
+}
+.countryFlag {
+    padding: 0;
+    background-image: url("http://i.imgur.com/OQiDoZe.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 11px;
+    margin-right: 4px;
+    width: 16px;
+    cursor: pointer;
+    white-space: nowrap;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #BFBFC1 #B6B6B6 #969696;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.09);
+}
+.dropdown i{
+    position: relative;
+    float: right;
+    z-index: 2;
+    left: 1px;
+    bottom: -5px;
+    color: #fff;
+}
+ul li i.fa-lg  {
+    display: none;
+}
+Country option*/
+
+
+Language option
+
+.drop .fa-lg {
+        margin-left: 10px;
+}
+
+.drop { 
+    /* margin-top: 10px; */
+    position: absolute;
+    right: 34px;
+    color: #fff;
+    top: -7px;}
+
+.drop p {
+    font-size: 15px;
+}    
+
+.drop.dropdown_button {
+    cursor: pointer;
+    width: auto;
+    display: inline-block;
+    padding: 4px 5px;
+    border: 1px solid #AAA;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    font-weight: bold;
+    color: #717780;
+    line-height: 16px;
+    text-decoration: none !important;
+    background: white;
+}
+
+.drop .input[type=checkbox]:checked +  .dropdown_button {
+    color: white;
+}
+
+.drop .input[type=checkbox] + .dropdown_button .arrow {
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border-top: 5px solid #6B7FA7;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+}
+
+.drop input[type=checkbox]:checked + .dropdown_button .arrow { border-color: white transparent transparent transparent }
+
+.drop .dropdown_content {
+    position: absolute;
+    border: 1px solid #777;
+    padding: 0px;
+    background: white;
+    margin: 0;
+    display: none
+    ;
+}
+
+.drop .dropdown_content li {
+    list-style: none;
+    margin-left: 0px;
+    line-height: 16px;
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.drop .dropdown_content li:hover {
+    border-top-color: #3B5998;
+    border-bottom-color: #3B5998;
+    background: #6D84B4;
+}
+
+.drop .dropdown_content li a {
+    display: block;
+    padding: 2px 7px;
+    padding-right: 15px;
+    color: #a0a1a1;
+    text-decoration: none !important;
+    white-space: nowrap;
+    font-size: 13px;
+
+}
+
+.drop .dropdown_content li:hover a {
+    color: white;
+    text-decoration: none !important;
+}
+
+.drop input[type="checkbox"]:checked ~ .dropdown_content { 
+    display: block
+     }
+
+.left-sidebar {
+    background: rgba(255, 255, 255, 0.78);
+    position: absolute;
+    width: 813px;
+    height: 376px;
+    color: #19171c;
+    border-radius: 5px;
+   	top: 164px;
+}
+
+/*Starts Form*/
+form {
+	width: 357px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.82);
+    float: right;
+    top: 0px;
+    height: 375px;
+    right: 0px;
+}
+
+form h3 {
+    color: #fff;
+    font-weight: lighter;
+    position: relative;
+    text-align: center;
+}
+
+input[type=text], input[type=password] {
+    width: 318px;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 21px;
+    border-radius: 5px;
+    position: relative;
+    left: 20px;
+    bottom: 20px;
+}
+
+button {
+    background-color: #d92027;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    margin-left: 26px;
+    width: 146px;
+    position: relative;
+    bottom: 27px;
+}
+
+.signup button {
+    background-color: rgba(217, 32, 39, 0);
+    color: #d00019;
+    padding: 14px 20px;
+    border: solid 2px #d00019;
+    cursor: pointer;
+    /* width: 100%; */
+    border-radius: 10px;
+    margin-left: 20px;
+    width: 146px;
+    position: relative;
+    bottom: 27px;
+    float: left;
+    height: 48px;
+    font-size: 18px;
+}
+
+/*button:hover {
+    opacity: 0.8;
+}
+*/
+.placer {
+    padding: 16px;
+    color: #fff;
+}
+
+span.psw {
+    position: relative;
+    bottom: 109px;
+    left: 220px;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+span.psw a
+{
+    font-size: 12px;
+    color: #818385;
+    text-decoration: none;
+}
+
+.action h4 {
+    position: relative;
+    bottom: 67px;
+    color: #fff;
+    text-align: center;
+}
+
+.checkboxFive input[type=checkbox] {
+    position: absolute;
+    top: 38px;
+    left: 16px;
+   
+}
+
+.checkboxFive {
+    width: 356px;
+    position: relative;
+    bottom: 42px;
+}
+
+.checkboxFive h5 {    
+    color: #fff;
+    display: block;
+    width: 266px;
+    position: relative;
+    top: 20px;
+    left: -45px;
+    font-weight: lighter;
+    font-size: 12px;
+    float: right;
+}
+
+.checkboxFive label:hover::after {
+    opacity: 0.5;
+}
+
+.checkboxFive input[type=checkbox]:checked + label:after {
+    opacity: 1;
+}
+
+div.social-wrap.c button {
+    font-weight: lighter;
+    font-size: 10px;
+    width: 148px;
+    text-shadow: rgba(0, 0, 0, .4) -1px -1px 0;
+    margin-left: 20px;
+    position: relative;
+    left: -1px;
+    padding: 10px 0px;
+    bottom: 82px;
+}
+
+div.social-wrap.c .read a {
+    color: #818385;
+    position: relative;
+    bottom: 69px;
+    float: right;
+    font-size: 12px;
+    left: -17px;
+    text-decoration: none;
+}
+
+div.social-wrap.c .fa-facebook{
+    position: relative;
+    right: 16px;
+}
+
+div.social-wrap.c .fa-google-plus{
+    position: relative;
+    right: 16px;
+}
+
+div.social-wrap.c > .googleplus {
+background: #d33b29;
+}
+
+div.social-wrap.c > .facebook {
+    background: #5f7bb6;
+}
+
+
+
+.left-sidebar h1 {
+    font-size: 34px; 
+    line-height: 4px;
+    padding-top: 194px;
+    text-align: center;
+}
+
+.left-sidebar h4 {
+    margin: 31px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: lighter;
+    line-height: 32px;
+}
+
+.left-sidebar img {
+    position: absolute;
+    width: 308px;
+    bottom: 235px;
+    left: 287px;
+}
+.login_form {
+    height: 378px;
+    width: 357px;
+    position: absolute;
+    float: right;
+
+    right: 0;
+    top: 164px;
+}
+.footer {
+    background: #fff;
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+.footer p {
+        margin: 0 auto;
+    text-align: center;
+    padding: 6px 0px;
+    font-size: 12px;
+    color: #818385;
+}
+
+.footer a {
+            margin: 0 auto;
+    text-align: center;
+    padding: 6px 0px;
+    font-size: 12px;
+    color: #d92027;
+    text-decoration: none;
+}

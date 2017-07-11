@@ -1,154 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- css -->
-    <link rel="stylesheet" href="css/main.css">
-    <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-    <!-- fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
-  </head>
-  <body>
 
-    <!-- Header -->
-    <div class="header-container">
-      <div class="top-bar">
-        <div class="selectors-container">
-          <div class="dropdown">
-              <button onclick="myFunction('1')" class="dropbtn">South Africa <i class="fa fa-sort-desc icon-up" aria-hidden="true"></i></button>
-              <div id="1" class="dropdown-content" for="1">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-              </div>
-          </div>
-          <div class="dropdown">
-            <button onclick="myFunction('2')" class="dropbtn">English <i class="fa fa-sort-desc icon-up" aria-hidden="true"></i></button>
-            <div id="2" class="dropdown-content" for="2">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-            </div>
-          </div>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- css -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+</head>
+
+<body>
+
+  <!-- Header -->
+  <div class="header-container">
+    <span class="top-bar"></span>
+    <div class="title-bar flex-container">
+      <div class="row">
+
+        <div class="flex-item">
+          <img class="float-left" src="img/Logo.png" alt="RTT logo">
         </div>
-      </div>
-      <div class="title-bar">
-        <img class="float-left" src="img/Logo.png" alt="RTT logo">
-        <div class="form-group col-3 float-right">
-          <div class='search' id='searchbox'>
-                <input type='text' class="form-control" placeholder="Search"></input>
-                <span class="input-group-addon">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                </span>
-            </div>
-        </div>
-        <div  class="center-title">
+
+        <div class="flex-item">
           <h2>Title for Screen</h2>
         </div>
-      </div>
-      <div class="header-nav col-12">
-        <nav>
-          <ul>
-            <a href="#"><li>Home</li></a>
-            <a href="#"><li>Account</li></a>
-            <a href="#"><li>Booking</li></a>
-            <a href="#"><li>Notifications</li></a>
-            <a href="#"><li>Track Delivery</li></a>
-            <a href="#"><li>Contact Us</li></a>
-          </ul>
-        </nav>
-      </div>
-    </div>
 
-    <!-- SideNav -->
-    <div class="sidenav-wrapper">
-      <div class="sidenav-container">
-        <div class="profile-container">
-          <div class="profile-picture">
-            <i class="fa fa-user-circle fa-9x" aria-hidden="true"></i>
-          </div>
-          <div class="profile-username">
-    	      <span id="username">Username</span>
+        <div class="flex-item">
+          <div class='search' id='searchbox'>
+            <input type='text' class="form-control" placeholder="Search"></input>
+            <span class="input-group-addon">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                  </span>
           </div>
         </div>
-        <div class="sidenav-nav">
-          <ul class="sidenav-items">
-            <a href="#">
-              <li>
-                Link
-              </li>
-            </a>
-            <a href="#">
-              <li>
-                Another link
-              </li>
-            </a>
-            <a href="#">
-              <li>
-                Another link
-              </li>
-            </a>
-            <a href="#">
-              <li>
-                Another link
-              </li>
-            </a>
-            <a href="#">
-              <li>
-                Another link
-              </li>
-            </a>
-            <a href="#">
-              <li>
-                Another link
-              </li>
-            </a>
-          </ul>
+
+      </div>
+
+
+
+
+    </div>
+    <div class="header-nav col-12">
+      <nav>
+        <ul>
+          <a href="#">
+            <li>Home</li>
+          </a>
+          <a href="#">
+            <li>Account</li>
+          </a>
+          <a href="#">
+            <li>Booking</li>
+          </a>
+          <a href="#">
+            <li>Notifications</li>
+          </a>
+          <a href="#">
+            <li>Track Delivery</li>
+          </a>
+          <a href="#">
+            <li>Contact Us</li>
+          </a>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <!--  <div class="flex-container">
+    <div class="row">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+    </div>
+  </div>  -->
+
+  <!-- SideNav -->
+  <div class="sidenav-wrapper">
+    <div class="sidenav-container">
+      <div class="profile-container">
+        <div class="profile-picture">
+          <i class="fa fa-user-circle fa-9x" aria-hidden="true"></i>
+        </div>
+        <div class="profile-username">
+          <span id="username">Username</span>
         </div>
       </div>
+      <div class="sidenav-nav">
+        <ul class="sidenav-items">
+          <a href="#">
+            <li>
+              Link
+            </li>
+          </a>
+          <a href="#">
+            <li>
+              Another link
+            </li>
+          </a>
+          <a href="#">
+            <li>
+              Another link
+            </li>
+          </a>
+          <a href="#">
+            <li>
+              Another link
+            </li>
+          </a>
+          <a href="#">
+            <li>
+              Another link
+            </li>
+          </a>
+          <a href="#">
+            <li>
+              Another link
+            </li>
+          </a>
+        </ul>
+      </div>
     </div>
+  </div>
 
+  <div class="content-container">
 
-<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-
-
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     <!--- Footer -->
     <div class="footer-container">
       <div class="footer-links">
         <span><strong>Internal Links:</strong>
-          <a href="#">Home</a>
-          <a href="#">Account</a>
-          <a href="#">Booking</a>
-          <a href="#">Notification</a>
-          <a href="#">Track Delivery</a>
-          <a href="#">Contact Us</a>
-        </span>
+            <a href="#">Home</a>
+            <a href="#">Account</a>
+            <a href="#">Booking</a>
+            <a href="#">Notification</a>
+            <a href="#">Track Delivery</a>
+            <a href="#">Contact Us</a>
+          </span>
         <span><strong>External Links:</strong>
-          <a href="#">RTT Logistics</a>
-          <a href="#">RTT Contract Logistics</a>
-          <a href="#">RTT Style</a>
-          <a href="#">Courier IT</a>
-          <a href="#">Revert</a>
-        </span>
+            <a href="#">RTT Logistics</a>
+            <a href="#">RTT Contract Logistics</a>
+            <a href="#">RTT Style</a>
+            <a href="#">Courier IT</a>
+            <a href="#">Revert</a>
+          </span>
       </div>
       <div class="footer-links">
         <span><strong>Physical Address:</strong>
-          Head Office (Acsa Park) Cnr Jones & Springbok Road , Bartlett, Boksburg, 1459
-        </span>
+            Head Office (Acsa Park) Cnr Jones & Springbok Road , Bartlett, Boksburg, 1459
+          </span>
         <span><strong>Physical Address:</strong>
-          RTT Contact Centre: Switchboard: +27 11 552 1000,
-        </span>
+            RTT Contact Centre: Switchboard: +27 11 552 1000,
+          </span>
       </div>
       <div class="footer-links">
         <span><strong>Branch manager:</strong>
-          Terry Ferreira, Contact Details: +27 11 552 1065, Email Address: <a href="mailto:terrt.ferreira@rtt.co.za">terrt.ferreira@rtt.co.za</a>
-        </span>
+            Terry Ferreira, Contact Details: +27 11 552 1065, Email Address: <a href="mailto:terry.ferreira@rtt.co.za">terry.ferreira@rtt.co.za</a>
+          </span>
       </div>
       <div class="footer-social">
         <span><a href="#"><img src="img/Fb.png" alt="facebook"></a></span>
@@ -162,15 +177,21 @@
         <span>©RTT . All Rights Reserved. <a href="#">Terms & Conditions</a>. <a href="#">Disclaimer</a></span>
       </div>
     </div>
+  </div>
 
 
 
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/locale/af.js"></script>
-    <script type="text/javascript" src="/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-  </body>
+
+
+
+
+  <!-- jQuery first, then Tether, then Bootstrap JS. -->
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/locale/af.js"></script>
+  <script type="text/javascript" src="/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
 </html>

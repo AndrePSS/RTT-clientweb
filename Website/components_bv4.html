@@ -1,140 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- css -->
-    <link rel="stylesheet" href="css/main.css">
-    <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-    <!-- fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
-  </head>
-  <body>
 
-    <div class="labled-container">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- css -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+</head>
+
+<body>
+
+  <div class="labled-container">
 
     <lable class="lable col-2">Lable container</lable>
 
-<!-- Dropdown -->
-      <div class="form-group row">
-        <label for="example-text-input" class="col-2 col-form-label">Dropdown</label>
-        <div class="col-10">
-          <div class="btn-group">
-            <button type="button" class="btn btn-danger">Action</button>
-            <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <!-- Dropdown -->
+    <div class="form-group row">
+      <label for="example-text-input" class="col-2 col-form-label">Dropdown</label>
+      <div class="col-10">
+        <div class="btn-group">
+          <button type="button" class="btn btn-danger">Action</button>
+          <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <span class="sr-only">Toggle Dropdown</span>
             </button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Separated link</a>
-            </div>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
           </div>
         </div>
       </div>
+    </div>
 
-<!-- Date Selector -->
-      <div class="form-group row">
-        <label for="example-text-input" class="col-2 col-form-label">Date picker</label>
-        <div class='col-10'>
-            <div class="form-group">
-                <div class='input-group date' id='datetimepicker1'>
+    <!-- Date Selector -->
+    <div class="form-group row">
+      <label for="example-text-input" class="col-2 col-form-label">Date picker</label>
+      <div class='col-10'>
+        <div class="form-group">
+          <div class='input-group date' id='datetimepicker1'>
 
-                    <input type='text' class="form-control" value="follow url for plugin: http://eonasdan.github.io/bootstrap-datetimepicker"></input>
-                    <span class="input-group-addon">
+            <input type='text' class="form-control" value="follow url for plugin: http://eonasdan.github.io/bootstrap-datetimepicker"></input>
+            <span class="input-group-addon">
                         <i class="fa fa-calendar" aria-hidden="true"></i>
                     </span>
-                </div>
-            </div>
-        </div>
-        <script type="text/javascript">
-            $(function () {
-                $('#datetimepicker1').datetimepicker();
-            });
-        </script>
-      </div>
-
-<!-- Text Field - Lable on left -->
-      <div class="form-group row">
-        <label for="example-text-input" class="col-2 col-form-label">Text</label>
-        <div class="col-10">
-          <input class="form-control" type="text" placeholder="Example Input" id="example-text-input">
+          </div>
         </div>
       </div>
+      <script type="text/javascript">
+        $(function() {
+          $('#datetimepicker1').datetimepicker();
+        });
+      </script>
+    </div>
 
-<!-- Text Field - Lable on top -->
-      <div class="form-group">
-        <label for="formGroupExampleInput">Example label</label>
-        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+    <!-- Text Field - Lable on left -->
+    <div class="form-group row">
+      <label for="example-text-input" class="col-2 col-form-label">Text</label>
+      <div class="col-10">
+        <input class="form-control" type="text" placeholder="Example Input" id="example-text-input">
       </div>
+    </div>
 
-<!-- Text area - Lable on top -->
-      <div class="form-group">
-        <label for="exampleTextarea">Example textarea</label>
-        <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+    <!-- Text Field - Lable on top -->
+    <div class="form-group">
+      <label for="formGroupExampleInput">Example label</label>
+      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+    </div>
+
+    <!-- Text area - Lable on top -->
+    <div class="form-group">
+      <label for="exampleTextarea">Example textarea</label>
+      <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+    </div>
+
+    <!-- Radio Buttons -->
+    <div class="form-group row">
+      <div class="col-12">
+        <input class="magic-radio" type="radio" name="radio" id="1" value="option1" checked="">
+        <label for="1" class="col-form-label">Radio Button 1</label>
+        <input class="magic-radio" type="radio" name="radio" id="2" value="option2" checked="">
+        <label for="2" class="col-form-label">Radio Button 2</label>
       </div>
+    </div>
 
-<!-- Radio Buttons -->
-      <div class="form-group row">
-        <div class="col-12">
-          <input class="magic-radio" type="radio" name="radio" id="1" value="option1" checked="">
-          <label for="1" class="col-form-label">Radio Button 1</label>
-          <input class="magic-radio" type="radio" name="radio" id="2" value="option2" checked="">
-          <label for="2" class="col-form-label">Radio Button 2</label>
-        </div>
+    <!-- Checkboxes -->
+    <div class="form-group row">
+      <div class="col-12">
+        <input class="magic-checkbox" type="checkbox" name="checkbox" id="check1" value="option1">
+        <label for="check1" class="col-form-label">Checkbox 1 inline </label>
+        <input class="magic-checkbox" type="checkbox" name="checkbox" id="check2" value="option2" checked="checked">
+        <label for="check2" class="col-form-label">Checkbox 2 inline</label>
       </div>
+    </div>
 
-<!-- Checkboxes -->
-      <div class="form-group row">
-        <div class="col-12">
-          <input class="magic-checkbox" type="checkbox" name="checkbox" id="check1" value="option1">
-          <label for="check1" class="col-form-label">Checkbox 1 inline </label>
-          <input class="magic-checkbox" type="checkbox" name="checkbox" id="check2" value="option2" checked="checked">
-          <label for="check2" class="col-form-label">Checkbox 2 inline</label>
-        </div>
-      </div>
-
-<!-- Buttons -->
-      <div class="button-group row">
-        <button type="button" class="btn btn-primary">Button</button>
-        <button type="button" class="btn btn-primary gray-bg">Button</button>
-        <button type="button" class="btn btn-primary-ghost">Ghost Button</button>
-      </div>
+    <!-- Buttons -->
+    <div class="button-group row">
+      <button type="button" class="btn btn-primary">Button</button>
+      <button type="button" class="btn btn-primary gray-bg">Button</button>
+      <button type="button" class="btn btn-primary-ghost">Ghost Button</button>
+    </div>
 
 
-      <span class="spacer-10v"></span>
+    <span class="spacer-10v"></span>
 
-      <div class="dark-title">Dark Title</div>
+    <div class="dark-title">Dark Title</div>
 
 
 
 
-<!-- Labled full width spacer -->
+    <!-- Labled full width spacer -->
     <div class="spacer">
       <lable class="lable col-2">Lable container</lable>
 
 
-<!-- Dark Title -->
+      <!-- Dark Title -->
       <div class="dark-title less-width-20px">Dark Title</div>
 
-<!-- Additional Log -->
-<div class="col-12">
-  <a href="#" class="add-log float-right" id="#">
+      <!-- Additional Log -->
+      <div class="col-12">
+        <a href="#" class="add-log float-right" id="#">
     <label for="add-item" class="col-form-label">Additional Dropoff</label>
     <span class="btn" id="add-item">
         <i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i>
     </span>
   </a>
-</div>
+      </div>
 
-<!-- accordians -->
+      <!-- accordians -->
       <div class="form-group row col-12 no-padding-right clear">
         <div class="collapse-accordion col-12" id="accordion2" role="tablist" aria-multiselectable="true">
           <div class="card">
@@ -218,7 +220,7 @@
             </div>
             <div id="collapseThree2" class="collapse" role="tabpanel" aria-labelledby="headingThree2">
               <div class="card-block">
-               3
+                3
               </div>
             </div>
           </div>
@@ -228,16 +230,17 @@
     </div>
 
 
-    </div>
+  </div>
 
 
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/locale/af.js"></script>
-    <script type="text/javascript" src="/path/to/bootstrap/js/collapse.js"></script>
-    <script type="text/javascript" src="/path/to/bootstrap/js/transition.js"></script>
-    <script type="text/javascript" src="/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
-  </body>
+  <!-- jQuery first, then Tether, then Bootstrap JS. -->
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/locale/af.js"></script>
+  <script type="text/javascript" src="/path/to/bootstrap/js/collapse.js"></script>
+  <script type="text/javascript" src="/path/to/bootstrap/js/transition.js"></script>
+  <script type="text/javascript" src="/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+</body>
+
 </html>
